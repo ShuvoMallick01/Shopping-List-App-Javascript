@@ -1,0 +1,116 @@
+/* 
+
+Template: Website title
+Author: Shuvo Mallick
+Description: Website title
+Version: 1.0.0
+Keywords: . 
+
+*/
+
+/* =========== CSS FILE INDEX =========== */
+/* ----- Utilities CSS ----- */
+/* ----- Style CSS ----- */
+/* ----- Responsive CSS ----- */
+/* =========== CSS FILE INDEX =========== */
+
+/* ===== STYLE INDEX ===== */
+/* 
+  1. Navbar Section
+  2. 
+  3.
+  */
+/* ===== STYLE INDEX ===== */
+
+/* =================== NEXT CSS FILE =================== */
+/* ===== title CSS ===== */
+/* =================== NEXT CSS FILE =================== */
+
+/* ===== IMPORT CSS FILE ===== */
+@import "./utilities.css";
+@import "./responsive.css";
+/* ===== IMPORT CSS FILE ===== */
+
+/* ===== START ===== */
+.list-section ul {
+  padding-left: 0px;
+}
+.list-section ul li,
+.list-section .btn-clear {
+  list-style: none;
+  margin-bottom: 10px;
+  /* justify-content: space-between; */
+  border: 1px solid gray;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.list-section ul li {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+}
+.list-section ul button {
+  border: none;
+  margin-left: 50px;
+  background: transparent;
+}
+
+.list-section .btn-clear {
+  width: 100%;
+  margin-top: 13px;
+}
+/* ===== END ===== */
+
+/* ===== START ===== */
+.card {
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+.runBtn {
+  margin-bottom: 8rem;
+}
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== START ===== */
+/* ===== END ===== */
+
+/* ===== FOOTER START===== */
+/* ===== FOOTER END===== */

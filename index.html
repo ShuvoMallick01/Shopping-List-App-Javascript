@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap JS JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Custom Js -->
+    <script src="js/app.js" defer></script>
+    <!-- Website Title -->
+    <title>Task Management</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="row col-lg-6 offset-lg-3 col-md-8 offset-md-2 bg-light p-3">
+          <header class="d-flex align-items-baseline gap-3 mt-2">
+            <i class="fa-solid fa-list-check fs-2"></i>
+            <h1 class="fw-light fs-1" id="app-title">Shopping List</h1>
+          </header>
+
+          <!-- Form -->
+          <form id="item-form" class="mt-4" method="get">
+            <input
+              type="text"
+              id="item-input"
+              class="form-control"
+              name="item"
+              placeholder="Enter Item"
+              id=""
+            />
+            <button type="submit" class="form-control btn btn-primary mt-2">
+              + Add Item
+            </button>
+          </form>
+          <!-- Filter -->
+          <div class="filter">
+            <input
+              type="text"
+              class="form-input-filter form-control bg-light mt-2 border-0 border-bottom"
+              id="filter"
+              placeholder="Filter Items"
+            />
+          </div>
+
+          <!-- Item List -->
+          <div class="list-section mt-4">
+            <!-- All item list  -->
+            <ul class="item-list" class="items">
+              <li class="item">
+                Apples<button class="remove-item btn-link text-red">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </li>
+              <li class="item">
+                Banana<button class="remove-item btn-link text-red">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </li>
+              <li>
+                Guaba<button class="remove-item btn-link text-red">
+                  <i class="fa-solid fa-x"></i>
+                </button>
+              </li>
+            </ul>
+            <!-- End List -->
+
+            <button id="clear" class="btn-clear">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TO-DO LIST END -->
+  </body>
+</html>
