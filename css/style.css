@@ -32,14 +32,22 @@ Keywords: .
 /* ===== IMPORT CSS FILE ===== */
 
 /* ===== START ===== */
+header img {
+  width: 23px !important;
+  fill: var(--bs-primary) !important;
+}
 .list-section ul {
   padding-left: 0px;
 }
+
+form button {
+  width: 30% !important;
+}
+
 .list-section ul li,
 .list-section .btn-clear {
   list-style: none;
   margin-bottom: 10px;
-  /* justify-content: space-between; */
   border: 1px solid gray;
   padding: 7px 10px;
   border-radius: 5px;
@@ -50,6 +58,7 @@ Keywords: .
   justify-content: space-between;
   font-weight: 800;
 }
+
 .list-section ul button {
   border: none;
   margin-left: 50px;
@@ -60,6 +69,14 @@ Keywords: .
   width: 100%;
   margin-top: 13px;
 }
+
+/* .list-section ul {
+  display: flex !important;
+  width: 40% !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 10px;
+} */
 /* ===== END ===== */
 
 /* ===== START ===== */

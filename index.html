@@ -46,26 +46,31 @@
   <body>
     <section>
       <div class="container">
-        <div class="row col-lg-6 offset-lg-3 col-md-8 offset-md-2 bg-light p-3">
+        <div class="row col-lg-6 offset-lg-3 col-md-8 offset-md-2 p-3">
           <header class="d-flex align-items-baseline gap-3 mt-2">
-            <i class="fa-solid fa-list-check fs-2"></i>
-            <h1 class="fw-light fs-1" id="app-title">Shopping List</h1>
+            <img src="./assets/images/list-check.svg" alt="" class="" />
+            <h1 class="app-title text-black">Shopping List</h1>
           </header>
 
           <!-- Form -->
           <form id="item-form" class="mt-4" method="get">
-            <input
-              type="text"
-              id="item-input"
-              class="form-control"
-              name="item"
-              placeholder="Enter Item"
-              id=""
-            />
-            <button type="submit" class="form-control btn btn-primary mt-2">
-              + Add Item
-            </button>
+            <div class="form_control">
+              <input
+                type="text"
+                id="item-input"
+                class="form-control form-input"
+                name="item"
+                placeholder="Enter Item"
+              />
+            </div>
+
+            <div class="form_control">
+              <button type="submit" class="form-control btn btn-primary mt-2">
+                + Add Item
+              </button>
+            </div>
           </form>
+
           <!-- Filter -->
           <div class="filter">
             <input
@@ -79,7 +84,7 @@
           <!-- Item List -->
           <div class="list-section mt-4">
             <!-- All item list  -->
-            <ul class="item-list" class="items">
+            <ul class="item-list" id="item-list">
               <li class="item">
                 Apples<button class="remove-item btn-link text-red">
                   <i class="fa-solid fa-x"></i>
@@ -90,7 +95,7 @@
                   <i class="fa-solid fa-x"></i>
                 </button>
               </li>
-              <li>
+              <li class="item">
                 Guaba<button class="remove-item btn-link text-red">
                   <i class="fa-solid fa-x"></i>
                 </button>
