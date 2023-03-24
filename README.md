@@ -1,4 +1,4 @@
-# SHOPPING LIST PROJECT USING JAVASCRIPT
+# Shopping List App Javascript Template
 
 Live Site: https://shuvomallick01.github.io/Shopping-List-App-Javascript/
 
