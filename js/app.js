@@ -59,19 +59,23 @@ function createIcon(classes) {
 
 // ADD ITEM TO STORAGE
 function addItemtoStorage(item) {
-  let itemFromStorage;
+  const itemFromStorage = getItemsFromStorage();
 
+  itemFromStorage.push(item);
+  localStorage.setItem("items", JSON.stringify(itemFromStorage));
+}
+
+// GET ITEM FORM STORAGE
+function getItemsFromStorage() {
+  let itemFromStorage;
+  // console.log(localStorage.getItem("items") == null);
   if (localStorage.getItem("items") == null) {
     itemFromStorage = [];
   } else {
     itemFromStorage = JSON.parse(localStorage.getItem("items"));
   }
 
-  // Add New Item to array
-  itemFromStorage.push(item);
-
-  // Convert to JSON String and set to local storage
-  localStorage.setItem("items", JSON.stringify(itemFromStorage));
+  return itemFromStorage;
 }
 
 // REMOVE ITEM
@@ -120,6 +124,11 @@ filterItems.addEventListener("input", (e) => {
       item.style.display = "none";
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  const getItemFormStorage = getItemsFromStorage();
+  getItemFormStorage.forEach((item) => addItemtoDOM(item));
 });
 
 // CALL FUNCTIONS
