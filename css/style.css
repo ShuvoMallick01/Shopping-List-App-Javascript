@@ -44,6 +44,11 @@ form button {
   width: 30% !important;
 }
 
+.custom-btn i {
+  color: white !important;
+  margin-right: 3px;
+}
+
 .list-section ul li,
 .list-section .btn-clear {
   list-style: none;
@@ -57,6 +62,10 @@ form button {
   display: flex;
   justify-content: space-between;
   font-weight: 800;
+}
+
+.editMode {
+  color: var(--bs-gray-400);
 }
 
 .list-section ul button {
