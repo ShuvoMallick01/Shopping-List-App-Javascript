@@ -30,17 +30,18 @@ itemForm.addEventListener("submit", (e) => {
     console.log(itemToEdit);
     itemToEdit.remove();
     isEditMode = false;
+  } else {
+    if (checkIfItemExists(newItem)) {
+      alert("This item already Exist");
+      return;
+    }
   }
 
-  // if (isEditMode == false) {
-  //   formBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Add Item';
-  //   formBtn.style.backgroundColor = "#fd390e";
-  //   isEditMode = false;
-  // }
-
+  checkIfItemExists(newItem);
   // Add Item to DOM
-  addItemtoDOM(newItem);
-
+  if (addItemtoDOM(newItem) == true) {
+    return alert("Item already exist!");
+  }
   // Add item to local Storage
   addItemtoStorage(newItem);
 
@@ -106,6 +107,36 @@ itemList.addEventListener("click", (e) => {
     setItemToEdit(e.target);
   }
 });
+
+// === CHECK ITEM EXISTING OR NOT ===
+function checkIfItemExists(item) {
+  let itemFromStorage = getItemsFromStorage();
+
+  let itemFormStorageLowerCase = itemFromStorage.map((item) =>
+    item.toLowerCase()
+  );
+  return itemFormStorageLowerCase.includes(item.toLowerCase());
+
+  // ----
+  // return itemFromStorage.includes(item);
+  // ----
+
+  // First Way
+  /**
+  let itemFromStorage = getItemsFromStorage();
+  let checkItem = false;
+
+  itemFromStorage.forEach((i) => {
+    if (i.toLowerCase() === item.toLowerCase()) {
+      checkItem = true;
+    }
+  });
+
+  return checkItem;
+   */
+}
+
+// checkIfItemExists();
 
 // === REMOVE ITEM FROM STORAGE ===
 function removeItemFormStorage(item) {

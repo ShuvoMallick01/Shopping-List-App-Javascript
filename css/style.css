@@ -41,7 +41,8 @@ header img {
 }
 
 form button {
-  width: 30% !important;
+  width: 40% !important;
+  flex-wrap: nowrap;
 }
 
 .custom-btn i {
